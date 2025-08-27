@@ -2,8 +2,10 @@ services:
   - type: web
     name: voceo-insurance
     env: node
-    buildCommand: npm install
+    buildCommand: npm ci --omit=dev --prefer-offline
     startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
+      - key: NPM_CONFIG_LOGLEVEL
+        value: error
