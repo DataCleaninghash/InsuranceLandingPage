@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insurance Claim Help & Appeals | Voceo</title>
+    <meta name="description" content="Claim denied or stuck? Voceo handles calls, emails, forms, and escalations to resolve health, auto, home, and travel insurance issues. Not affiliated with insurers." />
+    <link rel="canonical" href="/airlines-v2.html" />
+    <meta property="og:title" content="Insurance Claim Help & Appeals | Voceo" />
+    <meta property="og:description" content="Claim denied or stuck? Voceo handles calls, emails, forms, and escalations to resolve health, auto, home, and travel insurance issues." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/airlines-v2.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Insurance Claim Help & Appeals | Voceo" />
+    <meta name="twitter:description" content="Claim denied or stuck? We handle calls, emails, forms, and escalations to resolve insurance issues." />
+    <!-- Using system font stack; removed external Google Fonts -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "VOCEO",
+      "url": "/airlines-v2.html",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "/airlines-v2.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I claim compensation for a canceled flight in the US?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, under DOT regulations, you may be entitled to compensation for flight cancellations, especially if the airline is at fault. VOCEO helps you navigate these claims efficiently."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What rights do I have under DOT regulations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DOT regulations protect passengers from unfair practices, including compensation for delays, cancellations, and denied boarding. We ensure you get what you're legally entitled to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to get compensation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most cases are resolved within 2-4 weeks. We handle all communication and follow-up, so you don't have to wait on hold or chase responses."
+          }
+        }
+      ]
+    }
+    </script>
+    <style>
+        :root{
+            --primary-color:#5B4FFF; --secondary-color:#FF6B35; --text-dark:#0A0A0A; --text-light:#666666; --bg-light:#FAFAFA;
+            --grid-color:rgba(70, 4, 4, 0.08); --grid-size:60px; --max-width:1400px;
+            --accent:#0ea5a0; --accent-ink:#075e59; --card-radius:22px; --card-border:rgba(0,0,0,.08); --card-shadow:0 8px 24px rgba(0,0,0,.06);
+            --success:#16a34a; --danger:#dc2626;
+            --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:var(--font-sans);background:var(--bg-light);color:var(--text-dark);line-height:1.7;overflow-x:hidden}
+        .grid-background{position:fixed;inset:0;pointer-events:none;opacity:1;z-index:0}
+        .grid-background::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--grid-color) 1.5px,transparent 1.5px),linear-gradient(90deg,var(--grid-color) 1.5px,transparent 1.5px);background-size:var(--grid-size) var(--grid-size)}
+        .grid-background::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,transparent 0%,rgba(250,250,250,.3) 100%)}
+        
+        /* Dark theme option */
+        .dark-theme{--bg-light:#0a0a0a;--text-dark:#ffffff;--text-light:#cccccc;--grid-color:rgba(255,255,255,0.1);--card-border:rgba(255,255,255,.1);--card-shadow:0 8px 24px rgba(0,0,0,.3)}
+        .dark-theme .grid-background::after{background:radial-gradient(circle at 50% 50%,transparent 0%,rgba(10,10,10,.3) 100%)}
+        
+        .container{position:relative;z-index:1;max-width:var(--max-width);margin:0 auto;padding:0 20px}
+        .navbar{position:sticky;top:14px;z-index:100;background:transparent;border:0;backdrop-filter:none}
+        .nav-shell{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;width:100%;background:rgba(255,255,255,0.9);backdrop-filter:blur(10px) saturate(140%);border:1px solid rgba(0,0,0,0.06);border-radius:16px;padding:10px 14px;box-shadow:0 8px 24px rgba(0,0,0,0.06)}
+        .dark-theme .nav-shell{background:rgba(10,10,10,0.9);border:1px solid rgba(255,255,255,0.1)}
+        .logo{font-size:1.05rem;font-weight:700;letter-spacing:.2px;text-decoration:none;color:var(--text-dark);display:flex;align-items:center;gap:8px}
+        .dark-theme .logo{color:#fff}
+        .nav-menu{list-style:none;display:flex;align-items:center;gap:24px;margin:0;justify-self:center;justify-content:center}
+        .nav-menu a{display:inline-flex;align-items:center;gap:8px;font-size:.95rem;text-decoration:none;color:var(--text-dark);padding:8px 10px;border-radius:10px;transition:background .2s,color .2s}
+        .nav-menu a:hover{background:#f6f6f6;color:var(--primary-color)}
+        .dark-theme .nav-menu a{color:#fff}
+        .dark-theme .nav-menu a:hover{background:rgba(255,255,255,0.1)}
+        .nav-cta{margin-left:0;text-decoration:none;justify-self:end;background:#0a0a0a;color:#fff;font-weight:700;font-size:.95rem;padding:10px 14px;border-radius:12px;display:inline-flex;gap:8px;align-items:center;box-shadow:0 6px 16px rgba(0,0,0,.12);transition:transform .2s,box-shadow .2s,opacity .2s}
+        .nav-cta:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(0,0,0,.18);opacity:.95}
+        .nav-cta:active{transform:translateY(1px)}
+        .hamburger{display:none;width:38px;height:38px;border:1px solid rgba(0,0,0,0.08);background:#fff;border-radius:10px;align-items:center;justify-content:center}
+        .dark-theme .hamburger{border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.1)}
+        .hamburger span{display:block;width:18px;height:2px;background:#111;margin:3px 0;transition:transform .2s,opacity .2s}
+        .dark-theme .hamburger span{background:#fff}
+        @media (max-width:960px){
+            .nav-menu{position:absolute;right:20px;top:64px;display:none;flex-direction:column;align-items:stretch;gap:6px;background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:12px;padding:10px;min-width:220px;box-shadow:0 16px 28px rgba(0,0,0,.08)}
+            .dark-theme .nav-menu{background:rgba(10,10,10,0.95);border:1px solid rgba(255,255,255,0.1)}
+            .hamburger{display:flex;margin-left:auto}
+            .nav-cta{display:none}
+            .nav-shell.open .nav-menu{display:flex}
+            .nav-shell.open .hamburger span:nth-child(1){transform:translateY(5px) rotate(45deg)}
+            .nav-shell.open .hamburger span:nth-child(2){opacity:0}
+            .nav-shell.open .hamburger span:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+        }
+        .hero{padding:120px 0;text-align:center}
+        h1{font-size:clamp(2.2rem,7vw,4rem);font-weight:800;line-height:1.08;letter-spacing:-.015em;margin-bottom:1rem}
+        .subtitle{font-size:1.1rem;color:var(--text-light);max-width:820px;margin:0 auto 1.5rem}
+        
+        /* Improved 3-column pill grid */
+        .pill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin:24px auto;max-width:1000px}
+        @media (max-width:860px){.pill-grid{grid-template-columns:repeat(2,1fr)}}
+        @media (max-width:640px){.pill-grid{grid-template-columns:1fr}}
+        
+        /* More realistic card styling */
+        .pill{background:#fff;border:1px solid var(--card-border);border-radius:16px;padding:16px 18px;font-size:1rem;font-weight:500;display:flex;align-items:center;gap:12px;box-shadow:var(--card-shadow);transition:transform .25s,box-shadow .25s;cursor:pointer;text-align:left;color:var(--text-dark)}
+        .dark-theme .pill{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff}
+        .pill:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.15);border-color:var(--accent)}
+        .dark-theme .pill:hover{box-shadow:0 12px 28px rgba(0,0,0,.4)}
+        
+        /* Pill icon styling */
+        .pill-icon{width:20px;height:20px;object-fit:contain;filter:brightness(0) saturate(100%)}
+        .dark-theme .pill-icon{filter:brightness(0) saturate(100%) invert(1)}
+        
+        .button-group{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+        .btn{padding:12px 22px;border-radius:10px;font-size:.98rem;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s}
+        .btn-primary{background:linear-gradient(135deg,var(--primary-color),#7B6FFF);color:#fff;box-shadow:0 6px 18px rgba(91,79,255,.28)}
+        .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(91,79,255,.38)}
+        .btn-secondary{background:#fff;color:var(--text-dark);border:2px solid rgba(0,0,0,.08)}
+        .dark-theme .btn-secondary{background:rgba(255,255,255,0.1);color:#fff;border:2px solid rgba(255,255,255,0.2)}
+        .badges{display:flex;gap:14px;justify-content:center;color:var(--text-light);margin-top:14px;font-size:.95rem}
+        .section{padding:70px 0}
+        .steps{display:grid;grid-template-columns:repeat(4,minmax(220px,1fr));gap:16px;max-width:1200px;margin:0 auto}
+        .step{background:#fff;border:1px solid var(--card-border);border-radius:16px;padding:18px;box-shadow:var(--card-shadow);text-align:left}
+        .dark-theme .step{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1)}
+        .step strong{color:var(--accent-ink)}
+        .dark-theme .step strong{color:var(--accent)}
+        .dark-theme .step{color:#fff}
+        @media (max-width:980px){.steps{grid-template-columns:1fr}}
+        .final-cta .card{background:#fff;border:1px solid var(--card-border);border-radius:16px;box-shadow:var(--card-shadow);max-width:900px;margin:0 auto}
+        .dark-theme .final-cta .card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1)}
+        .card-header{padding:1rem 1.25rem;border-bottom:1px solid rgba(0,0,0,.06);display:flex;justify-content:space-between;align-items:center}
+        .dark-theme .card-header{border-bottom:1px solid rgba(255,255,255,0.1)}
+        .dark-theme .card-header strong{color:#fff}
+        .card-content{padding:1.25rem}
+        .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+        @media (max-width:720px){.form-row{grid-template-columns:1fr}}
+        .form-field{display:flex;flex-direction:column;gap:6px}
+        label{font-size:.9rem;color:var(--text-light)}
+        select,input{padding:12px 14px;border-radius:10px;border:1px solid rgba(0,0,0,.12);background:#fff;outline:none;transition:border-color .2s,box-shadow .2s}
+        .dark-theme select,.dark-theme input{border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.1);color:#fff}
+        select:focus,input:focus{border-color:var(--primary-color);box-shadow:0 0 0 3px rgba(91,79,255,.12)}
+        .alert{margin-top:.6rem;font-size:.95rem}
+        .alert.success{color:var(--success)}
+        .alert.error{color:var(--danger)}
+        
+        /* FAQ Section */
+        .faq-section{padding:70px 0}
+        .faq-grid{display:grid;gap:16px;max-width:800px;margin:0 auto}
+        .faq-item{background:#fff;border:1px solid var(--card-border);border-radius:16px;overflow:hidden;box-shadow:var(--card-shadow)}
+        .dark-theme .faq-item{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1)}
+        .faq-question{padding:1.25rem;font-weight:700;color:var(--text-dark);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .2s}
+        .dark-theme .faq-question{color:#fff}
+        .faq-question:hover{background:rgba(0,0,0,.02)}
+        .dark-theme .faq-question:hover{background:rgba(255,255,255,0.05)}
+        .faq-answer{padding:0 1.25rem 1.25rem;color:var(--text-light);line-height:1.6;display:none}
+        .faq-item.open .faq-answer{display:block}
+        .faq-toggle{font-size:1.2rem;transition:transform .2s}
+        .faq-item.open .faq-toggle{transform:rotate(45deg)}
+        
+        .footer{margin-top:40px;padding:32px 0;background:rgba(255,255,255,.8);border-top:1px solid rgba(0,0,0,.05)}
+        .dark-theme .footer{background:rgba(10,10,10,0.8);border-top:1px solid rgba(255,255,255,0.1)}
+        .footer-inner{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem;align-items:start}
+        .footer a{text-decoration:none;color:var(--text-dark)}
+        .dark-theme .footer a{color:#fff}
+        
+        /* Theme toggle */
+        .theme-toggle{position:fixed;bottom:20px;right:20px;width:50px;height:50px;border-radius:50%;background:var(--primary-color);color:#fff;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.2);z-index:1000;font-size:1.2rem}
+        
+        @media (prefers-reduced-motion:reduce){.pill,.btn,.step,.faq-item{transition:none}}
+    </style>
+</head>
+<body>
+    <div class="grid-background"></div>
+
+    <nav class="navbar" role="navigation" aria-label="Primary">
+        <div class="container">
+            <div class="nav-shell">
+                <a href="#top" class="logo">VOCEO</a>
+                <button class="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+                <ul class="nav-menu">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#how">How It Works</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a class="nav-cta" href="#waitlist">Start My Case</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <h1 id="hero-title">Get your insurance claim paid without the back-and-forth.</h1>
+                <p class="subtitle">We call, email, fill forms, and escalate until your claim moves. You track progress. Not legal advice; not affiliated with any insurer.</p>
+                
+                <h2 style="font-size:1.5rem;margin:24px 0 12px;color:var(--accent-ink)">Types of Issues We Handle</h2>
+                <div class="pill-grid" aria-label="What happened to you?">
+                    <button class="pill" data-issue="Claim denied">Claim denied (medical necessity, coding)</button>
+                    <button class="pill" data-issue="Delayed payment">Delayed payment or pending for weeks</button>
+                    <button class="pill" data-issue="Prior authorization denied">Prior authorization denied</button>
+                    <button class="pill" data-issue="EOB dispute">EOB dispute or incorrect member cost</button>
+                    <button class="pill" data-issue="Out-of-network surprise bill">Out-of-network surprise bill review</button>
+                    <button class="pill" data-issue="Liability claim denied">Liability or collision claim denied or lowballed</button>
+                    <button class="pill" data-issue="Delay beyond timelines">Delay beyond stated timelines</button>
+                    <button class="pill" data-issue="Diminished value dispute">Diminished value dispute</button>
+                    <button class="pill" data-issue="Rental car issues">Rental car or loss-of-use issues</button>
+                    <button class="pill" data-issue="Coverage denial">Coverage denial or underpayment</button>
+                    <button class="pill" data-issue="Scope of loss dispute">Scope of loss dispute</button>
+                    <button class="pill" data-issue="Living expenses rejected">Additional living expenses rejected</button>
+                    <button class="pill" data-issue="Trip cancellation denied">Trip cancellation or interruption denied</button>
+                    <button class="pill" data-issue="Medical expenses stalled">Medical expenses claim stalled</button>
+                    <button class="pill" data-issue="Baggage claim rejected">Baggage loss or delay claim rejected</button>
+                </div>
+
+                <div style="text-align:center;margin:30px 0;">
+                    <a href="#waitlist" class="btn btn-primary">Start My Case →</a>
+                </div>
+                
+                <div class="button-group">
+                    <a href="#waitlist" class="btn btn-primary">START MY CASE (60 SECONDS)</a>
+                    <a href="#how" class="btn btn-secondary">HOW IT WORKS</a>
+                </div>
+                <div class="badges" aria-hidden="true">
+                    <span>⚡ 24-hour first action</span><span>🎧 We handle calls</span><span>💬 Live updates</span><span>💰 Flat or no-win-no-fee</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="how" aria-labelledby="how-title">
+            <div class="container">
+                <h2 id="how-title" style="text-align:center;font-size:2rem;margin-bottom:1rem">How Voceo Helps You</h2>
+                <div class="steps">
+                    <div class="step"><strong>1️⃣ Submit your case</strong><br/>policy/ID, claim #, denial letter/EOB, dates, and proof. (Takes ~60 seconds.)</div>
+                    <div class="step"><strong>2️⃣ We take action</strong><br/>calls, emails, portal submissions, resubmissions with correct codes/docs.</div>
+                    <div class="step"><strong>3️⃣ We escalate</strong><br/>supervisor/appeals, provider billing team, employer benefits admin (for health), and official complaint channels when appropriate.</div>
+                    <div class="step"><strong>4️⃣ You get results</strong><br/>live timeline, transcripts, and status until resolved.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="why-voceo-title">
+            <div class="container">
+                <h2 id="why-voceo-title" style="text-align:center;font-size:2rem;margin-bottom:1rem">Why Voceo vs. going it alone</h2>
+                <div class="steps">
+                    <div class="step"><strong>Hands off:</strong> We do the calls, forms, and follow ups.</div>
+                    <div class="step"><strong>Process expertise:</strong> We know the queues, forms, and what adjusters ask for.</div>
+                    <div class="step"><strong>Outcome first pricing:</strong> Flat or no win no fee, you choose.</div>
+                    <div class="step"><strong>Transparency:</strong> Live updates, timestamps, and transcripts.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section final-cta" id="waitlist" aria-labelledby="cta-title">
+            <div class="container">
+                <h2 id="cta-title" style="text-align:center;font-size:2rem;margin-bottom:.75rem">Skip the hold music. Get your claim moving.</h2>
+                <p style="text-align:center;color:var(--text-light);margin-bottom:1rem">Start My Case (60 seconds)</p>
+                <div class="card">
+                    <div class="card-header"><strong>Start My Case</strong><span>→</span></div>
+                    <div class="card-content">
+                        <form id="airWaitlist" class="waitlist-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="insurance-type">What type of insurance?</label>
+                                    <select id="insurance-type" name="insurance-type" required>
+                                        <option value="" selected disabled>Select insurance type…</option>
+                                        <option>Health Insurance</option>
+                                        <option>Auto Insurance</option>
+                                        <option>Home/Renters Insurance</option>
+                                        <option>Travel Insurance</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-field">
+                                    <label for="issue">What type of issue?</label>
+                                    <select id="issue" name="issue" required>
+                                        <option value="" selected disabled>Select issue…</option>
+                                        <option>Claim denied</option>
+                                        <option>Delayed payment</option>
+                                        <option>Prior authorization denied</option>
+                                        <option>Coverage dispute</option>
+                                        <option>Underpayment</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Your email for updates</label>
+                                <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required />
+                            </div>
+                            <div class="button-group" style="justify-content:flex-start">
+                                <button type="submit" class="btn btn-primary">START MY CASE (60 SECONDS)</button>
+                            </div>
+                            <div id="formAlert" class="alert" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <h2 id="faq-title" style="text-align:center;font-size:2rem;margin-bottom:1rem">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            What insurance types do you support?
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Health, auto, home/renters, and travel. We work with major U.S. insurers and TPAs.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            Do I still need to call the insurer?
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            No. With your consent, Voceo handles calls, forms, and follow-ups. You get updates in your dashboard.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            Is this legal advice?
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            No. Voceo is not a law firm and does not provide legal advice. We act as your authorized consumer advocate to move your claim forward.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            What documents should I prepare?
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Policy/ID, claim number, denial letter/EOB, bills/receipts, photos/estimates, and a short description of what happened.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            Can you file an appeal or complaint?
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Yes. We prepare/submitted appeals and, when appropriate, file consumer complaints with official channels. We also coordinate with providers or employer benefits admins for health plans.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            What if I already tried and got nowhere?
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            We escalate to manager queues and provide corrected documentation/codes where needed. Many cases move after structured follow-up.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            Are you affiliated with insurers?
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            No. We are independent and use official insurer and consumer protection channels.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container footer-inner">
+            <div>
+                <h4>VOCEO</h4>
+                <p>We resolve insurance claims end-to-end so you don't have to wait on hold.</p>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="#faq">FAQ</a>
+                <a href="mailto:shyamalnarang@gmail.com">Contact</a>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <p style="margin-top:8px;color:var(--text-light)">Voceo is not a law firm and does not provide legal advice. Not affiliated with any insurer. Services provided with your authorization through official insurer and consumer channels.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">🌙</button>
+
+    <script>
+    // Smooth in-page scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id=a.getAttribute('href');
+        if(id.length>1){ e.preventDefault(); const t=document.querySelector(id); if(t){ t.scrollIntoView({behavior:'smooth',block:'start'});} }
+      });
+    });
+    
+    // Mobile nav toggle
+    const shell=document.querySelector('.nav-shell');
+    const burger=document.querySelector('.hamburger');
+    if(shell&&burger){ burger.addEventListener('click',()=>{ const open=shell.classList.toggle('open'); burger.setAttribute('aria-expanded',open?'true':'false'); }); }
+    
+    // Issue pill to prefill issue select
+    const issueSelect=document.getElementById('issue');
+    const insuranceSelect=document.getElementById('insurance-type');
+    document.querySelectorAll('.pill').forEach(p=>{
+      p.addEventListener('click',()=>{ const label=p.dataset.issue; if(issueSelect && insuranceSelect){
+        // Set insurance type first
+        if(label.toLowerCase().includes('health')){ insuranceSelect.value='Health Insurance'; }
+        else if(label.toLowerCase().includes('auto')){ insuranceSelect.value='Auto Insurance'; }
+        else if(label.toLowerCase().includes('home')){ insuranceSelect.value='Home/Renters Insurance'; }
+        else if(label.toLowerCase().includes('travel')){ insuranceSelect.value='Travel Insurance'; }
+        
+        // Set issue type
+        const opt=[...issueSelect.options].find(o=>o.text.toLowerCase().includes(label.split(' ')[0].toLowerCase()));
+        if(opt){ issueSelect.value=opt.value; }
+        
+        document.getElementById('airWaitlist').scrollIntoView({behavior:'smooth'});
+      }});
+    });
+    
+    // Form validation + API submission
+    const form=document.getElementById('airWaitlist');
+    const alertBox=document.getElementById('formAlert');
+    function setAlert(msg,type){ alertBox.textContent=msg; alertBox.className='alert '+(type==='success'?'success':'error'); }
+    function isValidEmail(e){ return /[^\s@]+@[^\s@]+\.[^\s@]+/.test(e); }
+    
+    form.addEventListener('submit',async e=>{
+      e.preventDefault();
+      const insuranceType=document.getElementById('insurance-type').value;
+      const issue=document.getElementById('issue').value;
+      const email=document.getElementById('email').value.trim();
+      
+      if(!insuranceType||!issue||!email){ setAlert('Please fill in all fields.', 'error'); return; }
+      if(!isValidEmail(email)){ setAlert('Please enter a valid email address.', 'error'); return; }
+      
+      // Show loading state
+      const submitBtn=form.querySelector('button[type="submit"]');
+      const originalText=submitBtn.textContent;
+      submitBtn.textContent='Submitting...';
+      submitBtn.disabled=true;
+      
+      try{
+        const response=await fetch('/api/waitlist',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({insuranceType,issue,email})
+        });
+        
+        const data=await response.json();
+        
+        if(data.success){
+          setAlert("Thanks! Your case has been submitted. We will be in touch within 24 hours.", 'success');
+          form.reset();
+          
+          // Track successful signup
+          fetch('/api/analytics',{
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body:JSON.stringify({
+              event_type:'case_submitted',
+              event_data:{insuranceType,issue}
+            })
+          }).catch(()=>{}); // Ignore analytics errors
+        }else{
+          setAlert(data.message||'Something went wrong. Please try again.', 'error');
+        }
+      }catch(error){
+        console.error('Submission error:',error);
+        setAlert('Network error. Please check your connection and try again.', 'error');
+      }finally{
+        submitBtn.textContent=originalText;
+        submitBtn.disabled=false;
+      }
+    });
+    
+    // FAQ toggle
+    function toggleFAQ(element) {
+      const item = element.parentElement;
+      const isOpen = item.classList.contains('open');
+      
+      // Close all other FAQs
+      document.querySelectorAll('.faq-item').forEach(faq => {
+        faq.classList.remove('open');
+      });
+      
+      // Toggle current FAQ
+      if (!isOpen) {
+        item.classList.add('open');
+      }
+    }
+    
+    // Theme toggle
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.classList.contains('dark-theme');
+      const toggle = document.querySelector('.theme-toggle');
+      
+      if (isDark) {
+        body.classList.remove('dark-theme');
+        toggle.textContent = '🌙';
+        toggle.setAttribute('aria-label', 'Switch to dark mode');
+      } else {
+        body.classList.add('dark-theme');
+        toggle.textContent = '☀️';
+        toggle.setAttribute('aria-label', 'Switch to light mode');
+      }
+    }
+    </script>
+</body>
+</html>

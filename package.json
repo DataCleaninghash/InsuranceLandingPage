@@ -1,0 +1,28 @@
+{
+  "name": "voceo-insurance",
+  "version": "1.0.0",
+  "description": "VOCEO Insurance Claims Landing Page",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "build": "npm install",
+    "install": "npm install"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.5",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "keywords": [
+    "insurance",
+    "claims",
+    "landing-page"
+  ],
+  "author": "VOCEO",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
